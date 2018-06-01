@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06AF6270DF50C4C05C1955EB /* libPods-QCMVVM.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 222CB1117721365BCEEC799C /* libPods-QCMVVM.a */; };
+		F66AC7EB20C0D44B00C5431E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AC7EA20C0D44B00C5431E /* AppDelegate.m */; };
+		F66AC7F120C0D44B00C5431E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66AC7EF20C0D44B00C5431E /* Main.storyboard */; };
+		F66AC7F320C0D44B00C5431E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F66AC7F220C0D44B00C5431E /* Assets.xcassets */; };
+		F66AC7F620C0D44B00C5431E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F66AC7F420C0D44B00C5431E /* LaunchScreen.storyboard */; };
+		F66AC7F920C0D44B00C5431E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AC7F820C0D44B00C5431E /* main.m */; };
+		F66AC80320C0D44C00C5431E /* QCMVVMTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AC80220C0D44C00C5431E /* QCMVVMTests.m */; };
+		F66AC80E20C0D44C00C5431E /* QCMVVMUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AC80D20C0D44C00C5431E /* QCMVVMUITests.m */; };
+		F66AC81E20C0D57600C5431E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AC81D20C0D57600C5431E /* ViewController.m */; };
+		F66AC82320C0D5EA00C5431E /* QCDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AC82220C0D5EA00C5431E /* QCDataSource.m */; };
+		F66AC82620C0D62300C5431E /* QCViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F66AC82520C0D62300C5431E /* QCViewModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F66AC7FF20C0D44B00C5431E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66AC7DE20C0D44B00C5431E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F66AC7E520C0D44B00C5431E;
+			remoteInfo = QCMVVM;
+		};
+		F66AC80A20C0D44C00C5431E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F66AC7DE20C0D44B00C5431E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F66AC7E520C0D44B00C5431E;
+			remoteInfo = QCMVVM;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		222CB1117721365BCEEC799C /* libPods-QCMVVM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-QCMVVM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DA9591C27FD0AD664E18D61 /* Pods-QCMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QCMVVM.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QCMVVM/Pods-QCMVVM.debug.xcconfig"; sourceTree = "<group>"; };
+		751EBE6BE1C8D2C5EC4A4777 /* Pods-QCMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QCMVVM.release.xcconfig"; path = "Pods/Target Support Files/Pods-QCMVVM/Pods-QCMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		F66AC7E620C0D44B00C5431E /* QCMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QCMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66AC7E920C0D44B00C5431E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F66AC7EA20C0D44B00C5431E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F66AC7F020C0D44B00C5431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F66AC7F220C0D44B00C5431E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F66AC7F520C0D44B00C5431E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F66AC7F720C0D44B00C5431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F66AC7F820C0D44B00C5431E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F66AC7FE20C0D44B00C5431E /* QCMVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QCMVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66AC80220C0D44C00C5431E /* QCMVVMTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCMVVMTests.m; sourceTree = "<group>"; };
+		F66AC80420C0D44C00C5431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F66AC80920C0D44C00C5431E /* QCMVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QCMVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F66AC80D20C0D44C00C5431E /* QCMVVMUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCMVVMUITests.m; sourceTree = "<group>"; };
+		F66AC80F20C0D44C00C5431E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F66AC81C20C0D57600C5431E /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F66AC81D20C0D57600C5431E /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F66AC82120C0D5EA00C5431E /* QCDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCDataSource.h; sourceTree = "<group>"; };
+		F66AC82220C0D5EA00C5431E /* QCDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCDataSource.m; sourceTree = "<group>"; };
+		F66AC82420C0D62300C5431E /* QCViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCViewModel.h; sourceTree = "<group>"; };
+		F66AC82520C0D62300C5431E /* QCViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCViewModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F66AC7E320C0D44B00C5431E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AF6270DF50C4C05C1955EB /* libPods-QCMVVM.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66AC7FB20C0D44B00C5431E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66AC80620C0D44C00C5431E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B1C06237A4F982EB84456D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				222CB1117721365BCEEC799C /* libPods-QCMVVM.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E776B8A0B88CD9C89A5090AA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4DA9591C27FD0AD664E18D61 /* Pods-QCMVVM.debug.xcconfig */,
+				751EBE6BE1C8D2C5EC4A4777 /* Pods-QCMVVM.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F66AC7DD20C0D44B00C5431E = {
+			isa = PBXGroup;
+			children = (
+				F66AC7E820C0D44B00C5431E /* QCMVVM */,
+				F66AC80120C0D44B00C5431E /* QCMVVMTests */,
+				F66AC80C20C0D44C00C5431E /* QCMVVMUITests */,
+				F66AC7E720C0D44B00C5431E /* Products */,
+				E776B8A0B88CD9C89A5090AA /* Pods */,
+				7B1C06237A4F982EB84456D6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F66AC7E720C0D44B00C5431E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F66AC7E620C0D44B00C5431E /* QCMVVM.app */,
+				F66AC7FE20C0D44B00C5431E /* QCMVVMTests.xctest */,
+				F66AC80920C0D44C00C5431E /* QCMVVMUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F66AC7E820C0D44B00C5431E /* QCMVVM */ = {
+			isa = PBXGroup;
+			children = (
+				F66AC82020C0D59700C5431E /* Model */,
+				F66AC81B20C0D57600C5431E /* View */,
+				F66AC81F20C0D59700C5431E /* ViewModel */,
+				F66AC7E920C0D44B00C5431E /* AppDelegate.h */,
+				F66AC7EA20C0D44B00C5431E /* AppDelegate.m */,
+				F66AC7EF20C0D44B00C5431E /* Main.storyboard */,
+				F66AC7F220C0D44B00C5431E /* Assets.xcassets */,
+				F66AC7F420C0D44B00C5431E /* LaunchScreen.storyboard */,
+				F66AC7F720C0D44B00C5431E /* Info.plist */,
+				F66AC7F820C0D44B00C5431E /* main.m */,
+			);
+			path = QCMVVM;
+			sourceTree = "<group>";
+		};
+		F66AC80120C0D44B00C5431E /* QCMVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				F66AC80220C0D44C00C5431E /* QCMVVMTests.m */,
+				F66AC80420C0D44C00C5431E /* Info.plist */,
+			);
+			path = QCMVVMTests;
+			sourceTree = "<group>";
+		};
+		F66AC80C20C0D44C00C5431E /* QCMVVMUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F66AC80D20C0D44C00C5431E /* QCMVVMUITests.m */,
+				F66AC80F20C0D44C00C5431E /* Info.plist */,
+			);
+			path = QCMVVMUITests;
+			sourceTree = "<group>";
+		};
+		F66AC81B20C0D57600C5431E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F66AC81C20C0D57600C5431E /* ViewController.h */,
+				F66AC81D20C0D57600C5431E /* ViewController.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F66AC81F20C0D59700C5431E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				F66AC82420C0D62300C5431E /* QCViewModel.h */,
+				F66AC82520C0D62300C5431E /* QCViewModel.m */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F66AC82020C0D59700C5431E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F66AC82120C0D5EA00C5431E /* QCDataSource.h */,
+				F66AC82220C0D5EA00C5431E /* QCDataSource.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F66AC7E520C0D44B00C5431E /* QCMVVM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66AC81220C0D44C00C5431E /* Build configuration list for PBXNativeTarget "QCMVVM" */;
+			buildPhases = (
+				F7A4CBC2E5B36C4B0252D6EC /* [CP] Check Pods Manifest.lock */,
+				F66AC7E220C0D44B00C5431E /* Sources */,
+				F66AC7E320C0D44B00C5431E /* Frameworks */,
+				F66AC7E420C0D44B00C5431E /* Resources */,
+				5287970E9494B2C35F071879 /* [CP] Embed Pods Frameworks */,
+				31A1A1FF57128707899A01A4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QCMVVM;
+			productName = QCMVVM;
+			productReference = F66AC7E620C0D44B00C5431E /* QCMVVM.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F66AC7FD20C0D44B00C5431E /* QCMVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66AC81520C0D44C00C5431E /* Build configuration list for PBXNativeTarget "QCMVVMTests" */;
+			buildPhases = (
+				F66AC7FA20C0D44B00C5431E /* Sources */,
+				F66AC7FB20C0D44B00C5431E /* Frameworks */,
+				F66AC7FC20C0D44B00C5431E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F66AC80020C0D44B00C5431E /* PBXTargetDependency */,
+			);
+			name = QCMVVMTests;
+			productName = QCMVVMTests;
+			productReference = F66AC7FE20C0D44B00C5431E /* QCMVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F66AC80820C0D44C00C5431E /* QCMVVMUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F66AC81820C0D44C00C5431E /* Build configuration list for PBXNativeTarget "QCMVVMUITests" */;
+			buildPhases = (
+				F66AC80520C0D44C00C5431E /* Sources */,
+				F66AC80620C0D44C00C5431E /* Frameworks */,
+				F66AC80720C0D44C00C5431E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F66AC80B20C0D44C00C5431E /* PBXTargetDependency */,
+			);
+			name = QCMVVMUITests;
+			productName = QCMVVMUITests;
+			productReference = F66AC80920C0D44C00C5431E /* QCMVVMUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F66AC7DE20C0D44B00C5431E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = BYX;
+				TargetAttributes = {
+					F66AC7E520C0D44B00C5431E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					F66AC7FD20C0D44B00C5431E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F66AC7E520C0D44B00C5431E;
+					};
+					F66AC80820C0D44C00C5431E = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F66AC7E520C0D44B00C5431E;
+					};
+				};
+			};
+			buildConfigurationList = F66AC7E120C0D44B00C5431E /* Build configuration list for PBXProject "QCMVVM" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F66AC7DD20C0D44B00C5431E;
+			productRefGroup = F66AC7E720C0D44B00C5431E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F66AC7E520C0D44B00C5431E /* QCMVVM */,
+				F66AC7FD20C0D44B00C5431E /* QCMVVMTests */,
+				F66AC80820C0D44C00C5431E /* QCMVVMUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F66AC7E420C0D44B00C5431E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66AC7F620C0D44B00C5431E /* LaunchScreen.storyboard in Resources */,
+				F66AC7F320C0D44B00C5431E /* Assets.xcassets in Resources */,
+				F66AC7F120C0D44B00C5431E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66AC7FC20C0D44B00C5431E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66AC80720C0D44C00C5431E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31A1A1FF57128707899A01A4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QCMVVM/Pods-QCMVVM-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5287970E9494B2C35F071879 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QCMVVM/Pods-QCMVVM-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F7A4CBC2E5B36C4B0252D6EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QCMVVM-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F66AC7E220C0D44B00C5431E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66AC82320C0D5EA00C5431E /* QCDataSource.m in Sources */,
+				F66AC81E20C0D57600C5431E /* ViewController.m in Sources */,
+				F66AC7F920C0D44B00C5431E /* main.m in Sources */,
+				F66AC82620C0D62300C5431E /* QCViewModel.m in Sources */,
+				F66AC7EB20C0D44B00C5431E /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66AC7FA20C0D44B00C5431E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66AC80320C0D44C00C5431E /* QCMVVMTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F66AC80520C0D44C00C5431E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F66AC80E20C0D44C00C5431E /* QCMVVMUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F66AC80020C0D44B00C5431E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F66AC7E520C0D44B00C5431E /* QCMVVM */;
+			targetProxy = F66AC7FF20C0D44B00C5431E /* PBXContainerItemProxy */;
+		};
+		F66AC80B20C0D44C00C5431E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F66AC7E520C0D44B00C5431E /* QCMVVM */;
+			targetProxy = F66AC80A20C0D44C00C5431E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F66AC7EF20C0D44B00C5431E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F66AC7F020C0D44B00C5431E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F66AC7F420C0D44B00C5431E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F66AC7F520C0D44B00C5431E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F66AC81020C0D44C00C5431E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F66AC81120C0D44C00C5431E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F66AC81320C0D44C00C5431E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DA9591C27FD0AD664E18D61 /* Pods-QCMVVM.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYPTXJ9VBT;
+				INFOPLIST_FILE = QCMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qc.com.QCMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F66AC81420C0D44C00C5431E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 751EBE6BE1C8D2C5EC4A4777 /* Pods-QCMVVM.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYPTXJ9VBT;
+				INFOPLIST_FILE = QCMVVM/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qc.com.QCMVVM;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F66AC81620C0D44C00C5431E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYPTXJ9VBT;
+				INFOPLIST_FILE = QCMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qc.com.QCMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QCMVVM.app/QCMVVM";
+			};
+			name = Debug;
+		};
+		F66AC81720C0D44C00C5431E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYPTXJ9VBT;
+				INFOPLIST_FILE = QCMVVMTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qc.com.QCMVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/QCMVVM.app/QCMVVM";
+			};
+			name = Release;
+		};
+		F66AC81920C0D44C00C5431E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYPTXJ9VBT;
+				INFOPLIST_FILE = QCMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qc.com.QCMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QCMVVM;
+			};
+			name = Debug;
+		};
+		F66AC81A20C0D44C00C5431E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MYPTXJ9VBT;
+				INFOPLIST_FILE = QCMVVMUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.qc.com.QCMVVMUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = QCMVVM;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F66AC7E120C0D44B00C5431E /* Build configuration list for PBXProject "QCMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66AC81020C0D44C00C5431E /* Debug */,
+				F66AC81120C0D44C00C5431E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66AC81220C0D44C00C5431E /* Build configuration list for PBXNativeTarget "QCMVVM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66AC81320C0D44C00C5431E /* Debug */,
+				F66AC81420C0D44C00C5431E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66AC81520C0D44C00C5431E /* Build configuration list for PBXNativeTarget "QCMVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66AC81620C0D44C00C5431E /* Debug */,
+				F66AC81720C0D44C00C5431E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F66AC81820C0D44C00C5431E /* Build configuration list for PBXNativeTarget "QCMVVMUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F66AC81920C0D44C00C5431E /* Debug */,
+				F66AC81A20C0D44C00C5431E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F66AC7DE20C0D44B00C5431E /* Project object */;
+}
