@@ -26,9 +26,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self.view addSubview:self.tableView];
-    
     [self bindData];
-
+    
     
 }
 
@@ -74,7 +73,7 @@
 //MARK: tableview Delagete
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
-    
+    NSLog(@"%@",@"我点击了tableView事件");
     
 }
 
